@@ -13,12 +13,12 @@ const apiBase = $config.public.NUXT_PUBLIC_API_BASE;
 
   const fetchPokerHand = async () => {
     try {
-    //   const data  = await $fetch(`${apiBase}/api/game/deal`, { 
-    //     method: 'POST'
-    //   });
-    const data = await $fetch(`${apiBase}/deal`, { // Append `/deal` to the base URL
+      const data  = await $fetch(`${apiBase}/api/game/deal`, { 
         method: 'POST'
       });
+    // const data = await $fetch(`${apiBase}/deal`, {
+    //     method: 'POST'
+    //   });
 
       console.log('Response from API:', data);
 
