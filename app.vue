@@ -11,8 +11,6 @@
         </template>
     </Menubar>
     <NuxtPage />
-    <footer>
-    </footer>
   </div>
 </template>
 

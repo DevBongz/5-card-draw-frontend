@@ -15,8 +15,11 @@
         <h3>Hand Evaluation</h3>
         <p>{{ evaluation }}</p>
       </div>
-  
-      <Button @click="fetchPokerHand" label="Deal New Hand"/>
+      
+      <div class="!bg-gray-600">
+        <Button @click="fetchPokerHand" label="Deal New Hand"/>
+      </div>
+      
     </div>
   </template>
   

@@ -6,13 +6,17 @@ export const usePoker = () => {
   const evaluation = ref([]);
 
   const { $config } = useNuxtApp();
-  const apiBase = $config.public.apiBase; 
+//   const apiBase = $config.public.apiBase; 
+const apiBase = $config.public.NUXT_PUBLIC_API_BASE;
 
   console.log('API Base URL:', apiBase);
 
   const fetchPokerHand = async () => {
     try {
-      const data  = await $fetch(`${apiBase}/api/game/deal`, { 
+    //   const data  = await $fetch(`${apiBase}/api/game/deal`, { 
+    //     method: 'POST'
+    //   });
+    const data = await $fetch(`${apiBase}/deal`, { // Append `/deal` to the base URL
         method: 'POST'
       });
 
