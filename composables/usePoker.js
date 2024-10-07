@@ -6,8 +6,8 @@ export const usePoker = () => {
   const evaluation = ref([]);
 
   const { $config } = useNuxtApp();
-//   const apiBase = $config.public.apiBase; 
-const apiBase = $config.public.NUXT_PUBLIC_API_BASE;
+  const apiBase = $config.public.apiBase; 
+// const apiBase = $config.public.NUXT_PUBLIC_API_BASE;
 
   console.log('API Base URL:', apiBase);
 
